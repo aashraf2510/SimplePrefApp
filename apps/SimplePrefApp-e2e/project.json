@@ -1,0 +1,10 @@
+{
+  "name": "SimplePrefApp-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/SimplePrefApp-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["SimplePrefApp"],
+  "// targets": "to see all targets run: nx show project SimplePrefApp-e2e --web",
+  "targets": {}
+}
