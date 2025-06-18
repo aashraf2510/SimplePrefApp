@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { SsrCookieService } from 'ngx-cookie-service-ssr';
-import { CookiesCustomOptions } from '../interfaces/cookies.interface';
+import { CookiesCustomOptions } from '../../interfaces/cookies.interface';
 
 @Injectable({
   providedIn: 'root',

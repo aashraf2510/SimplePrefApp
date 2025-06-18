@@ -13,10 +13,10 @@ import {
 } from '@angular/platform-browser';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
-import { ThemeManagerService } from './shared/theme-manager.service';
+import { ThemeManagerService } from './shared/services/theme-manager.service';
 import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { httpLoaderFactory } from './utils/translateUtils';
+import { httpLoaderFactory } from './shared/utils/translateUtils';
 
 export const appConfig: ApplicationConfig = {
   providers: [

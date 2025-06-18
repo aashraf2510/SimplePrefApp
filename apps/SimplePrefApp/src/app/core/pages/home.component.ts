@@ -4,7 +4,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 import { ToggleSwitchModule } from 'primeng/toggleswitch';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
-import { ThemeManagerService } from '../../shared/theme-manager.service';
+import { ThemeManagerService } from '../../shared/services/theme-manager.service';
 
 @Component({
   selector: 'app-home',
