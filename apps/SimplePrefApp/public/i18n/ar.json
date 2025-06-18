@@ -1,0 +1,18 @@
+{
+  "nav.home": "الرئيسية",
+  "nav.courses": "الدورات",
+  "nav.instructors": "المدربون",
+  "nav.contact": "اتصل بنا",
+  "home.title": "أتقن <span class='text-blue-600 dark:text-blue-400'>مهارات التقنية</span> المطلوبة",
+  "home.desc": "انغمس في دوراتنا المتخصصة في Flutter وتطوير الويب (Angular, React) وتصميم UI/UX لبدء حياتك المهنية.",
+  "home.explore_btn": "استكشف جميع الدورات",
+  "home.cards.flutter.title": "تطوير تطبيقات Flutter",
+  "home.cards.flutter.desc": "ابنِ تطبيقات جميلة ومترجمة أصليًا للجوال والويب والديسك توب من قاعدة كود واحدة.",
+  "home.cards.flutter.btn": "تعلم Flutter",
+  "home.cards.web.title": "تطوير الويب الحديث",
+  "home.cards.web.desc": "أتقن أطر عمل الواجهة الأمامية مثل Angular و React لبناء تطبيقات ويب ديناميكية ومتجاوبة.",
+  "home.cards.web.btn": "استكشف دورات الويب",
+  "home.cards.uiux.title": "أساسيات تصميم UI/UX",
+  "home.cards.uiux.desc": "أنشئ واجهات مستخدم وتجارب سهلة الاستخدام وجذابة بصريًا من خلال دوراتنا التصميمية.",
+  "home.cards.uiux.btn": "ابدأ التصميم"
+}

@@ -1,0 +1,18 @@
+{
+  "nav.home": "Home",
+  "nav.courses": "Courses",
+  "nav.instructors": "Instructors",
+  "nav.contact": "Contact",
+  "home.title": "Master In-Demand <span class='text-blue-600 dark:text-blue-400'>Tech Skills</span>",
+  "home.desc": "Dive into our specialized courses in Flutter, Web Development (Angular, React), and UI/UX Design to kickstart your career.",
+  "home.explore_btn": "Explore All Courses",
+  "home.cards.flutter.title": "Flutter App Development",
+  "home.cards.flutter.desc": "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
+  "home.cards.flutter.btn": "Learn Flutter",
+  "home.cards.web.title": "Modern Web Development",
+  "home.cards.web.desc": "Master front-end frameworks like Angular and React to build dynamic and responsive web applications.",
+  "home.cards.web.btn": "Explore Web Courses",
+  "home.cards.uiux.title": "UI/UX Design Fundamentals",
+  "home.cards.uiux.desc": "Create intuitive and visually appealing user interfaces and experiences with our design courses.",
+  "home.cards.uiux.btn": "Start Designing"
+}

@@ -13,15 +13,14 @@ export class CookiesManagerService {
 
     if (options?.isNeverExpire) {
       const futureDate = new Date();
-      futureDate.setFullYear(futureDate.getFullYear() + 40);
+      futureDate.setFullYear(futureDate.getFullYear() + 3);
       expiresVal = futureDate;
     } else if (options?.expireNum !== undefined) {
       expiresVal = options.expireNum;
     } else if (options?.expireDate) {
       expiresVal = options.expireDate;
     }
-
-    this.cookies.set(key, value, { expires: expiresVal });
+    this.cookies.set(key, value, expiresVal);
   }
 
   getCookie(name: string): string {
