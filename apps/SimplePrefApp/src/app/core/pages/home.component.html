@@ -31,15 +31,23 @@
   </div>
 
   <div class="flex items-center gap-4">
-    <button
-      class="p-2 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
-      aria-label="Change language"
-    ></button>
+    <p-toggleswitch [(ngModel)]="themeVal" (ngModelChange)="toggleTheme()">
+      <ng-template #handle>
+        <i
+          class="!text-xs pi"
+          [class.pi-moon]="themeVal == true"
+          [class.pi-sun]="themeVal == false"
+        ></i>
+      </ng-template>
+    </p-toggleswitch>
 
-    <button
-      class="p-2 text-gray-700 dark:text-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300"
-      aria-label="Toggle theme"
-    ></button>
+    <p-togglebutton
+      (ngModelChange)="toggleLang()"
+      [(ngModel)]="langVal"
+      onLabel="AR"
+      offLabel="EN"
+      styleClass="w-24"
+    />
   </div>
 </nav>
 
