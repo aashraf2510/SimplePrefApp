@@ -1,5 +1,6 @@
 import {
   ApplicationConfig,
+  importProvidersFrom,
   inject,
   provideAppInitializer,
   provideZoneChangeDetection,
@@ -13,6 +14,9 @@ import {
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
 import { ThemeManagerService } from './shared/theme-manager.service';
+import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { httpLoaderFactory } from './utils/translateUtils';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -31,5 +35,15 @@ export const appConfig: ApplicationConfig = {
         },
       },
     }),
+    provideHttpClient(withFetch()),
+    importProvidersFrom([
+      TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: httpLoaderFactory,
+          deps: [HttpClient],
+        },
+      }),
+    ]),
   ],
 };

@@ -2,15 +2,19 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { ToggleSwitchModule } from 'primeng/toggleswitch';
-import { Theme } from '../../types/theme.type';
-import { Lang } from '../../types/lang.type';
+import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
-import { CookiesManagerService } from '../../shared/cookies-manager.service';
 import { ThemeManagerService } from '../../shared/theme-manager.service';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, ToggleButtonModule, ToggleSwitchModule, FormsModule],
+  imports: [
+    CommonModule,
+    ToggleButtonModule,
+    ToggleSwitchModule,
+    FormsModule,
+    TranslateModule,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

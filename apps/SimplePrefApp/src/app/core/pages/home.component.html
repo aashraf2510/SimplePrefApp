@@ -11,22 +11,22 @@
     <a
       href="#"
       class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-      >Home</a
+      >{{ 'nav.home' | translate }}</a
     >
     <a
       href="#"
       class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-      >Courses</a
+      >{{ 'nav.courses' | translate }}</a
     >
     <a
       href="#"
       class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-      >Instructors</a
+      >{{ 'nav.instructors' | translate }}</a
     >
     <a
       href="#"
       class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-      >Contact</a
+      >{{ 'nav.contact' | translate }}</a
     >
   </div>
 
@@ -54,21 +54,18 @@
 <main class="p-8 md:p-12 text-center bg-gray-100 dark:bg-gray-800 min-h-screen">
   <h1
     class="text-5xl md:text-6xl font-extrabold mb-4 text-gray-900 dark:text-gray-100 leading-tight"
-  >
-    Master In-Demand
-    <span class="text-blue-600 dark:text-blue-400">Tech Skills</span>
-  </h1>
+    [innerHTML]="'home.title' | translate"
+  ></h1>
   <p
     class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto"
   >
-    Dive into our specialized courses in Flutter, Web Development (Angular,
-    React), and UI/UX Design to kickstart your career.
+    {{ 'home.desc' | translate }}
   </p>
 
   <button
     class="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-75"
   >
-    Explore All Courses
+    {{ 'home.explore_btn' | translate }}
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="ml-2 h-5 w-5"
@@ -106,16 +103,15 @@
         </svg>
       </div>
       <h2 class="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-100">
-        Flutter App Development
+        {{ 'home.cards.flutter.title' | translate }}
       </h2>
       <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-        Build beautiful, natively compiled applications for mobile, web, and
-        desktop from a single codebase.
+        {{ 'home.cards.flutter.desc' | translate }}
       </p>
       <button
         class="inline-flex items-center px-5 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300"
       >
-        Learn Flutter
+        {{ 'home.cards.flutter.btn' | translate }}
       </button>
     </div>
 
@@ -139,16 +135,15 @@
         </svg>
       </div>
       <h2 class="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-100">
-        Modern Web Development
+        {{ 'home.cards.web.title' | translate }}
       </h2>
       <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-        Master front-end frameworks like Angular and React to build dynamic and
-        responsive web applications.
+        {{ 'home.cards.web.desc' | translate }}
       </p>
       <button
         class="inline-flex items-center px-5 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors duration-300"
       >
-        Explore Web Courses
+        {{ 'home.cards.web.btn' | translate }}
       </button>
     </div>
 
@@ -172,16 +167,15 @@
         </svg>
       </div>
       <h2 class="text-2xl font-bold mb-3 text-gray-800 dark:text-gray-100">
-        UI/UX Design Fundamentals
+        {{ 'home.cards.uiux.title' | translate }}
       </h2>
       <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-        Create intuitive and visually appealing user interfaces and experiences
-        with our design courses.
+        {{ 'home.cards.uiux.desc' | translate }}
       </p>
       <button
         class="inline-flex items-center px-5 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition-colors duration-300"
       >
-        Start Designing
+        {{ 'home.cards.uiux.btn' | translate }}
       </button>
     </div>
   </div>
