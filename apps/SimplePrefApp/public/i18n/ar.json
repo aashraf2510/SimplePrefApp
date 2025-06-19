@@ -1,10 +1,10 @@
 {
   "nav.home": "الرئيسية",
   "nav.courses": "الدورات",
-  "nav.instructors": "المدربون",
+  "nav.instructors": "المحاضرون",
   "nav.contact": "اتصل بنا",
   "home.title": "أتقن <span class='text-blue-600 dark:text-blue-400'>مهارات التقنية</span> المطلوبة",
-  "home.desc": "انغمس في دوراتنا المتخصصة في Flutter وتطوير الويب (Angular, React) وتصميم UI/UX لبدء حياتك المهنية.",
+  "home.desc": "تعمق في دوراتنا المتخصصة في Flutter وتطوير الويب (Angular, React) وتصميم UI/UX لبدء حياتك المهنية.",
   "home.explore_btn": "استكشف جميع الدورات",
   "home.cards.flutter.title": "تطوير تطبيقات Flutter",
   "home.cards.flutter.desc": "ابنِ تطبيقات جميلة ومترجمة أصليًا للجوال والويب والديسك توب من قاعدة كود واحدة.",

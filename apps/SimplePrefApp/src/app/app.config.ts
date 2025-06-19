@@ -20,9 +20,7 @@ import { appInit } from './shared/utils/app.utils';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideAppInitializer(() => {
-      return appInit();
-    }),
+    provideAppInitializer(() => appInit()),
     provideClientHydration(withEventReplay()),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(appRoutes),

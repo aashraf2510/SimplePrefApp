@@ -21,7 +21,12 @@ export class ThemeManagerService {
       this.setHTMLTheme(theme as Theme);
       this.setCurrentTheme(theme as Theme);
     }
-    console.log(`Init Theme is  ==> ${theme}`);
+
+    return of(theme).pipe(
+      tap(() => {
+        console.log(`Init Theme is  ==> ${theme}`);
+      })
+    );
   }
 
   setCurrentTheme(theme: Theme) {

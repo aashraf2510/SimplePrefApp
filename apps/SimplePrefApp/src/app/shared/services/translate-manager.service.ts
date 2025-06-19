@@ -3,6 +3,7 @@ import { inject, Injectable, signal } from '@angular/core';
 import { CookiesManagerService } from './cookies-manager.service';
 import { Lang } from '../types/lang.type';
 import { TranslateService } from '@ngx-translate/core';
+import { tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -28,6 +29,12 @@ export class TranslateManagerService {
     }
 
     console.log(`Init Lang is  ==> ${lang}`);
+
+    return this.translateService.use(lang || 'en').pipe(
+      tap(() => {
+        console.log(`Init Lang is  ==> ${lang}`);
+      })
+    );
   }
 
   toggleLanguage(): void {
