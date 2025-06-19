@@ -45,7 +45,7 @@ export class ThemeManagerService {
     this.setHTMLTheme(newTheme);
 
     this.cookiesManager.setCookie(this.themeKey, newTheme, {
-      isNeverExpire: true,
+      expireNum: 400,
     });
   }
 

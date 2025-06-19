@@ -10,12 +10,7 @@ export class CookiesManagerService {
 
   setCookie(key: string, value: string, options?: CookiesCustomOptions): void {
     let expiresVal: Date | number | undefined;
-
-    if (options?.isNeverExpire) {
-      const futureDate = new Date();
-      futureDate.setFullYear(futureDate.getFullYear() + 3);
-      expiresVal = futureDate;
-    } else if (options?.expireNum !== undefined) {
+    if (options?.expireNum !== undefined) {
       expiresVal = options.expireNum;
     } else if (options?.expireDate) {
       expiresVal = options.expireDate;

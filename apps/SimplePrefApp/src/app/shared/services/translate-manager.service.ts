@@ -45,7 +45,7 @@ export class TranslateManagerService {
     this.setCurrentLang(newLang);
     this.setHTMLLang(newLang);
     this.cookiesManager.setCookie(this.langKey, newLang, {
-      isNeverExpire: true,
+      expireNum: 400,
     });
   }
 
