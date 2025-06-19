@@ -16,17 +16,12 @@ export class ThemeManagerService {
 
   initTheme() {
     let theme = this.cookiesManager.getCookie(this.themeKey);
-    // console.log('Theme ===>>> ', theme);
+
     if (theme) {
       this.setHTMLTheme(theme as Theme);
       this.setCurrentTheme(theme as Theme);
     }
-
-    return of(theme).pipe(
-      tap(() => {
-        console.log(`Toggled Theme is  ==> ${theme}`);
-      })
-    );
+    console.log(`Init Theme is  ==> ${theme}`);
   }
 
   setCurrentTheme(theme: Theme) {

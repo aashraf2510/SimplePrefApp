@@ -1,7 +1,6 @@
 import {
   ApplicationConfig,
   importProvidersFrom,
-  inject,
   provideAppInitializer,
   provideZoneChangeDetection,
 } from '@angular/core';
@@ -13,16 +12,16 @@ import {
 } from '@angular/platform-browser';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
-import { ThemeManagerService } from './shared/services/theme-manager.service';
 import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+
 import { httpLoaderFactory } from './shared/utils/translateUtils';
+import { appInit } from './shared/utils/app.utils';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideAppInitializer(() => {
-      const themeManager = inject(ThemeManagerService);
-      return themeManager.initTheme();
+      return appInit();
     }),
     provideClientHydration(withEventReplay()),
     provideZoneChangeDetection({ eventCoalescing: true }),

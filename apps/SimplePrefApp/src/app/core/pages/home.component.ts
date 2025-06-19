@@ -5,6 +5,7 @@ import { ToggleSwitchModule } from 'primeng/toggleswitch';
 import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 import { ThemeManagerService } from '../../shared/services/theme-manager.service';
+import { TranslateManagerService } from '../../shared/services/translate-manager.service';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +25,7 @@ export class HomeComponent implements OnInit {
   fetchIsDone = false;
 
   private readonly _themeManager = inject(ThemeManagerService);
+  private readonly _translateManager = inject(TranslateManagerService);
 
   toggleTheme() {
     // this.themeVal = !this.themeVal;
@@ -33,13 +35,19 @@ export class HomeComponent implements OnInit {
   toggleLang() {
     // this.langVal = this.langVal == 'ar' ? 'en' : 'ar';
     console.log(`Language Now is :  ${this.langVal}`);
+    this._translateManager.toggleLanguage();
   }
 
   getUserPrefFromCookies() {
     const theme = this._themeManager.getCurrentTheme();
-    console.log(theme);
+    const lang = this._translateManager.getCurrentLang();
+
     if (theme == 'dark') {
       this.themeVal = true;
+    }
+
+    if (lang == 'ar') {
+      this.langVal = true;
     }
   }
 
